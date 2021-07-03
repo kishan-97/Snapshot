@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", monospace;
+}
+
+:root {
+  --blue: rgb(151, 243, 255);
+  --lightblue: rgba(203, 249, 255, 0.5);
+  --sidebarOption: rgba(0, 195, 255, 0.4);
+  --darkmidnightblue: rgb(8, 17, 59);
+  --form: rgba(50, 81, 146, 0.5);
+  --black: rgb(0, 0, 0);
+}
+
+body {
+  background-color: var(--black);
+  background-image: url("background.jpg");
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  margin-top: 20px;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+/* Navbar   */
+
+.logo-img {
+  margin-left: 20px;
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  height: 10vh;
+  width: 99vw;
+  background-color: var(--blue);
+  border-radius: 5px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 5px;
+  font-size: 26px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 26px;
+  height: 50px;
+  width: 125px;
+  background-color: var(--black);
+  color: rgb(189, 251, 255);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+}
+.btn:hover {
+  color: rgb(255, 215, 0);
+  font-size: 30px;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Main   */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  width: 99vw;
+  height: 80vh;
+}
+
+.main div {
+  border-radius: 5px;
+}
+
+/* Sidebar */
+
+.sidebar {
+  margin: 10px;
+  flex: 0.177;
+  height: 100%;
+  background-color: var(--lightblue);
+}
+.sidebar-option {
+  background-color: black;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 80%;
+  display: flex;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease 0s;
+}
+
+.sidebar-option:hover {
+  color: white;
+  background-color: var(--blue);
+  color: black;
+}
+.sidebar-option.active {
+  background-color: black;
+  color: rgb(11, 255, 255);
+}
+
+.title {
+  padding-left: 10px;
+}
+
+/* Feed */
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  flex: 0.477;
+  background-color: var(--lightblue);
+  max-width: 550px;
+}
+
+.post {
+  margin: 10px;
+  height: 540px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 26px;
+}
+.image-container {
+  float: left;
+  height: 80px;
+  width: 80px;
+  background-color: transparent;
+  text-align: center;
+}
+.img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+.intro {
+  height: 80px;
+  display: flex;
+  font-weight: 600;
+  flex-direction: column;
+}
+.display_name {
+  margin-top: 20px;
+}
+
+.img-content {
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 480px;
+  background-size: contain;
+}
+.like-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(255, 251, 251, 0.336);
+}
+.reward {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* Trending */
+
+.trending {
+  margin: 10px;
+  height: 100%;
+  flex: 0.277;
+  background-color: var(--lightblue);
+}
+
+/* Login */
+
+.login {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 400px;
+  width: 40vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--lightblue);
+  min-width: 400px;
+  border-radius: 10px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.heading-col {
+  border-radius: 10px;
+  height: 100px;
+  width: 100%;
+  background-color: var(--blue);
+}
+
+.input {
+  height: 40px;
+  width: 300px;
+  background-color: White;
+  color: black;
+  font-size: 26px;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input-box {
+  display: flex;
+  border: 3px solid black;
+  margin: 10px;
+}
+.input-img {
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+}
